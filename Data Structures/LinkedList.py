@@ -29,9 +29,8 @@ class Singly_Linked_List(object):
 
     def addNode(self, value):
         node = Node(value)
-        Next = self.head
+        node.setNext(self.head)
         self.head = node
-        node.setNext(Next)
 
     def removeNode(self, value):
         prev = None
