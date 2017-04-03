@@ -39,12 +39,12 @@ class Binary_Tree(object):
     def preOrder(self):
         if self.root:
             print(self.root)
-            inOrder(self.left_child)
-            inOrder(self.right_child)
+            preOrder(self.left_child)
+            preOrder(self.right_child)
     def postOrder(self):
         if self.root:
-            inOrder(self.left_child)
-            inOrder(self.right_child)
+            postOrder(self.left_child)
+            postOrder(self.right_child)
             print(self.root)
 
     def getRight(self):
